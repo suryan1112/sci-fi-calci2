@@ -1,0 +1,179 @@
+#outter{
+    background-image: url(./calculator.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* box-sizing: border-box; */
+    display: flex;
+    /* border:2px solid; */
+    width:400px;
+    height: 800px;
+    margin:auto;
+    flex-wrap: wrap;
+    /* padding:10px; */
+    justify-content: center;
+    position: relative;
+    /* text-align: right; */
+}
+#outter>div{
+    width: 100%;
+    padding:0 30px;
+    position: relative;
+}
+#outter div{
+    border:2px solid rgba(143, 30, 30,0);
+}
+#outter div div:not(#screen>#shift,#screen>#alpha){
+    border:2px solid;
+}
+ #text>div{
+    width:90%;
+    margin:auto;
+    height:90px;
+    background-color: #d8ebd8;
+    opacity:1;
+    position: relative;
+    top:137px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: 'Tektur', cursive;
+    box-shadow:2px 2px 5px 2px black inset;
+
+ }
+ #text>div .upper{
+    display: flex;
+    font-size: 1.5em;
+    align-items: center; 
+    overflow: hidden;
+    flex-direction:row-reverse;
+    /* justify-content:flex-end; */
+ }
+ #text>div .lower{
+    display:flex;
+    align-items: center;  
+    font-size: 2.5em;
+    overflow: hidden;
+ }
+ .complex{position: relative;}
+.complex>div{
+    position:relative;
+    top:110px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:10px 0;
+    margin:0 10px;
+}
+.number>div{
+    position:absolute;
+    left:40px;
+    width:80%;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.complexKey{
+    width:45px; height: 26.8px;
+    margin:9.9px 1px;
+    border-radius: 5px;
+    box-shadow:1px 2px 2px .1px;
+
+}
+.keys{
+    width:55px; height: 39.3px;
+    /* margin:0 3px; */
+    margin-bottom: 17px;
+    border-radius: 10px;
+    box-shadow:2px 2px 4px .5px;
+}
+.complex>#shift{
+    position:absolute;
+    left:36px; top:20.8px;
+    height: 31.8px; width: 34px;
+    border-radius: 50%;
+    box-shadow:2px 2px 4px .5px;
+
+}
+.complex>#alpha{
+    position:absolute;
+    height: 31.8px; width: 34px;
+    border-radius: 50%;
+    left:86.5px; top:20.8px;
+    box-shadow:2px 2px 4px .5px;
+
+}
+.complex>#onoff{
+    position:absolute;
+    right:35.6px; top:20.8px;
+    height: 31.8px; width: 34px;
+    border-radius: 50%;
+    box-shadow:2px 2px 4px .5px;
+
+}
+.complex>#mode{
+    position:absolute;
+    height: 31.8px; width: 34px;
+    border-radius: 50%;
+    right:86px; top:20.8px;
+    box-shadow:2px 2px 4px .5px;
+
+}
+.complex>#upper{
+    position:absolute;
+    left:174px; top:17px;
+    height: 40px; width: 30px;
+    border-radius: 10px 10px 50% 50%;
+    box-shadow:2px 2px 4px .5px;
+
+}
+.complex>#lower{
+    position:absolute;
+    left:174px; top:67px;
+    height: 40px; width: 30px;
+    border-radius: 50% 50% 10px 10px;
+    box-shadow:2px 2px 4px .5px;
+    
+}
+.complex>#left{
+    position:absolute;
+    left:129px; top: 48px;
+    height: 30px; width: 40px;
+    border-radius: 10px 50% 50% 10px;
+    box-shadow:2px 2px 4px .5px;
+
+}
+.complex>#right{
+    position:absolute;
+    right:130px; top: 48px;
+    height: 30px; width: 40px;
+    border-radius: 50% 10px 10px 50%;
+    box-shadow:2px 2px 4px .5px;
+    
+}
+#screen #shift{
+    height: 15px; width:13px;
+    position: absolute;
+    top:3px; left:3px;
+    background:black;
+    font-size: .7rem;
+    color:#d8ebd8;
+    text-align: center;
+    opacity: 0.5;
+}
+.screen{
+    position: relative;
+}
+#screen #alpha{
+    height: 15px; width:13px;
+    position: absolute;
+    top:3px; left:20px;
+    background:black;
+    font-size: .7rem;
+    color:#d8ebd8;
+    text-align: center;
+    opacity: 0.5;
+    padding-top:-2px
+}
+
